@@ -24,7 +24,7 @@ return [
 
         'prefix' => 'developer',
 
-        'namespace' => 'App\\Admin\\Controllers',
+        'namespace' => 'App\\Developer\\Controllers',
 
         'middleware' => ['web', 'developer'],
     ],
@@ -32,12 +32,12 @@ return [
     /*
      * Open-developer install directory.
      */
-    'directory' => app_path('Admin'),
+    'directory' => app_path('Developer'),
 
     /*
      * Open-developer html title.
      */
-    'title' => 'Admin',
+    'title' => 'Developer',
 
     /*
      * Use `https`.
@@ -58,7 +58,7 @@ return [
         'providers' => [
             'developer' => [
                 'driver' => 'eloquent',
-                'model'  => OpenAdmin\Admin\Auth\Database\Administrator::class,
+                'model'  => OpenDeveloper\Developer\Auth\Database\Administrator::class,
             ],
         ],
     ],
@@ -86,19 +86,19 @@ return [
 
         // User tables and model.
         'users_table' => 'developer_users',
-        'users_model' => OpenAdmin\Admin\Auth\Database\Administrator::class,
+        'users_model' => OpenDeveloper\Developer\Auth\Database\Administrator::class,
 
         // Role table and model.
         'roles_table' => 'developer_roles',
-        'roles_model' => OpenAdmin\Admin\Auth\Database\Role::class,
+        'roles_model' => OpenDeveloper\Developer\Auth\Database\Role::class,
 
         // Permission table and model.
         'permissions_table' => 'developer_permissions',
-        'permissions_model' => OpenAdmin\Admin\Auth\Database\Permission::class,
+        'permissions_model' => OpenDeveloper\Developer\Auth\Database\Permission::class,
 
         // Menu table and model.
         'menu_table' => 'developer_menu',
-        'menu_model' => OpenAdmin\Admin\Auth\Database\Menu::class,
+        'menu_model' => OpenDeveloper\Developer\Auth\Database\Menu::class,
 
         // Pivot table for table above.
         'operation_log_table'    => 'developer_operation_log',

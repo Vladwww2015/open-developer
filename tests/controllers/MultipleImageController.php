@@ -2,12 +2,12 @@
 
 namespace Tests\Controllers;
 
-use OpenAdmin\Admin\Controllers\AdminController;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Grid;
+use OpenDeveloper\Developer\Controllers\DeveloperController;
+use OpenDeveloper\Developer\Form;
+use OpenDeveloper\Developer\Grid;
 use Tests\Models\MultipleImage;
 
-class MultipleImageController extends AdminController
+class MultipleImageController extends DeveloperController
 {
     protected $title = 'Images';
 

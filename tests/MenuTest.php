@@ -1,7 +1,7 @@
 <?php
 
-use OpenAdmin\Admin\Auth\Database\Administrator;
-use OpenAdmin\Admin\Auth\Database\Menu;
+use OpenDeveloper\Developer\Auth\Database\Administrator;
+use OpenDeveloper\Developer\Auth\Database\Menu;
 
 class MenuTest extends TestCase
 {

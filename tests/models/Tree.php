@@ -3,7 +3,7 @@
 namespace Tests\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use OpenAdmin\Admin\Traits\ModelTree;
+use OpenDeveloper\Developer\Traits\ModelTree;
 
 class Tree extends Model
 {

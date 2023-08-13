@@ -21,12 +21,12 @@ class TestCase extends BaseTestCase
 
         $app->booting(function () {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Admin', \OpenAdmin\Admin\Facades\Admin::class);
+            $loader->alias('Developer', \OpenDeveloper\Developer\Facades\Developer::class);
         });
 
         $app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
 
-        $app->register('OpenAdmin\Admin\AdminServiceProvider');
+        $app->register('OpenDeveloper\Developer\DeveloperServiceProvider');
 
         return $app;
     }
@@ -50,7 +50,7 @@ class TestCase extends BaseTestCase
             $this->app['config']->set($key, $value);
         }
 
-        $this->artisan('vendor:publish', ['--provider' => 'OpenAdmin\Admin\AdminServiceProvider']);
+        $this->artisan('vendor:publish', ['--provider' => 'OpenDeveloper\Developer\DeveloperServiceProvider']);
 
         Schema::defaultStringLength(191);
 
@@ -66,14 +66,14 @@ class TestCase extends BaseTestCase
 
         require __DIR__.'/seeds/factory.php';
 
-//        \OpenAdmin\Admin\Admin::$css = [];
-//        \OpenAdmin\Admin\Admin::$js = [];
-//        \OpenAdmin\Admin\Admin::$script = [];
+//        \OpenDeveloper\Developer\Developer::$css = [];
+//        \OpenDeveloper\Developer\Developer::$js = [];
+//        \OpenDeveloper\Developer\Developer::$script = [];
     }
 
     protected function tearDown(): void
     {
-        (new CreateAdminTables())->down();
+        (new CreateDeveloperTables())->down();
 
         (new CreateTestTables())->down();
 

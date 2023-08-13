@@ -1,6 +1,6 @@
 <?php
 
-use OpenAdmin\Admin\Auth\Database\Administrator;
+use OpenDeveloper\Developer\Auth\Database\Administrator;
 
 class IndexTest extends TestCase
 {

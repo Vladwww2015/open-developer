@@ -44,7 +44,7 @@ class AuthTest extends TestCase
             ->see('laravel/framework');
 
         $this
-            ->see('<span>Admin</span>')
+            ->see('<span>Developer</span>')
             ->see('<span>Users</span>')
             ->see('<span>Roles</span>')
             ->see('<span>Permission</span>')

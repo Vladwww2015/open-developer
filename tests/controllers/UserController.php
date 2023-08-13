@@ -2,13 +2,13 @@
 
 namespace Tests\Controllers;
 
-use OpenAdmin\Admin\Controllers\AdminController;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Grid;
+use OpenDeveloper\Developer\Controllers\DeveloperController;
+use OpenDeveloper\Developer\Form;
+use OpenDeveloper\Developer\Grid;
 use Tests\Models\Tag;
 use Tests\Models\User;
 
-class UserController extends AdminController
+class UserController extends DeveloperController
 {
     protected $title = 'Users';
 
