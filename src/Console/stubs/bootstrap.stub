@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * Open-developer - developer builder based on Laravel.
+ * @author z-song <https://github.com/z-song>
+ *
+ * Bootstraper for Developer.
+ *
+ * Here you can remove builtin form field:
+ * OpenDeveloper\Developer\Form::forget(['map', 'editor']);
+ *
+ * Or extend custom form field:
+ * OpenDeveloper\Developer\Form::extend('php', PHPEditor::class);
+ *
+ * Or require js and css assets:
+ * Developer::css('/packages/prettydocs/css/styles.css');
+ * Developer::js('/packages/prettydocs/js/main.js');
+ *
+ */
+
+OpenDeveloper\Developer\Form::forget(['editor']);
