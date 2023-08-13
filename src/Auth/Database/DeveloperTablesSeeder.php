@@ -26,7 +26,7 @@ class DeveloperTablesSeeder extends Seeder
         Role::truncate();
         Role::create([
             'name' => 'Administrator',
-            'slug' => 'developeristrator',
+            'slug' => 'administrator',
         ]);
 
         // add role to user.
