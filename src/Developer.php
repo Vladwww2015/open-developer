@@ -418,7 +418,7 @@ class Developer
 
     public static function asset($asset)
     {
-        return url('/vendor/open-developer_/'.$asset);
+        return url('/vendor/open-developer/'.$asset);
     }
 
     public static function js_trans()

@@ -108,8 +108,8 @@ class DeveloperServiceProvider extends ServiceProvider
     protected function registerPublishing()
     {
         if ($this->app->runningInConsole()) {
-            $this->publishes([__DIR__.'/../config' => config_path()], 'open-developer_-config');
-            $this->publishes([__DIR__.'/../resources/lang' => resource_path('lang')], 'open-developer_-lang');
+            $this->publishes([__DIR__.'/../config' => config_path()], 'open-developer-config');
+            $this->publishes([__DIR__.'/../resources/lang' => resource_path('lang')], 'open-developer-lang');
             $this->publishes([__DIR__.'/../database/migrations' => database_path('migrations')], 'open-developer-migrations');
             $this->publishes([__DIR__.'/../resources/assets' => public_path('vendor/open-developer')], 'open-developer-assets');
             $this->publishes([__DIR__.'/../resources/assets/test' => public_path('vendor/open-developer-test')], 'open-developer-test');

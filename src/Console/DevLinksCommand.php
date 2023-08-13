@@ -63,7 +63,7 @@ class DevLinksCommand extends Command
         $reflector = new ReflectionClass("\OpenDeveloper\Developer\Developer");
         $dir = str_replace('src/Developer.php', '', $reflector->getFileName()).'resources/assets/';
 
-        return [public_path('vendor/open-developer_') => $dir];
+        return [public_path('vendor/open-developer') => $dir];
     }
 
     /**
